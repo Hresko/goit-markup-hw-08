@@ -1,0 +1,19 @@
+.logo {
+    display:block;
+    font-family: $logo-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &--header {
+        padding-top: 25px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+        color: $logo-color-header;
+      }
+    &__accent {
+        color: $logo-accent-color;
+      }
+  }

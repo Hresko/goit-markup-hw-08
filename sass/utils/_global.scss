@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: $primary-tex-color;
+  background-color: $primary-background-color;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }

@@ -1,0 +1,76 @@
+  /* general */
+  $rimary-background-color: rgba(255,255,255,1);
+  $primary-tex-color: rgba(117,117,117,1);
+  $title-text-color: rgba(33, 33, 33, 1);
+  $button-background-color-normal:rgba(245, 244, 250, 1);
+  $button-color-hover:rgba(255,255,255,1);
+  $primary-background-color: rgba(255,255,255,1);
+
+  /* header */
+  $header-border-color:rgba(236, 236, 236, 1);
+  $logo-color-header:rgba(33,33,33,1);
+  $logo-accent-color:rgba(33,150,243,1);
+  $site-nav-color:rgba(33,33,33,1);
+  $site-nav__link--current-color:rgba(33,150,243,1);
+  $header-color-hover: rgba(33,150,243,1);
+
+/* hero */
+  $hero-background-color: rgba(47,48,58,1);
+  $hero__title-color: rgba(255,255,255,1);
+  $hero__button-color: rgba(245,244,250,1);
+
+  /* modal window */
+  $backdrop-background-color: rgba(0, 0, 0, 0.2);
+  $modal__close-button-color: rgba(0, 0, 0, 1); ;
+  $modal__close-button-border-color: rgba(0, 0, 0, 0.1);
+  $modal-color-hover: rgba(33,150,243,1);
+  $checkbox__icon-checked: rgba(255, 255, 255, 1);
+  $checkbox__icon-unchecked-border-color: rgba(33, 33, 33, 1);
+  $form__button-submit-color-hover: rgba(24, 140, 232, 1);
+  $form-border-color: rgba(33, 33, 33, 0.2);
+
+// preference 
+$preference__icon-background-color: rgba(245, 244, 250, 1);
+/* occupation*/
+
+$occupation__text-background-color: rgba(47, 48, 58, 0.8);
+$occupation__text-color: rgba(255, 255, 255, 1);
+
+/* team */
+$team-background-color:rgba(245,244,250,1);
+$team__item-background-color: rgba(255, 255, 255, 1);
+$social-links__link--team-background-color: rgb(255, 255, 255); ;
+$social-links__link--team-icon-color: rgba(175, 177, 184, 1);
+$social-links__link--team-background-color-hover: rgba(33,150,243,1);
+$social-links__link--team-icon-color-hover: rgba(255, 255, 255, 1);;
+/* clients-icon */
+$clients-link-color:rgba(175, 177, 184, 1);
+$clients-link-color-hover: rgba(33,150,243,1);
+
+/* Footer */
+$footer-background-color:rgba(47,48,58,1);
+$logo--footer-color: rgba(255,255,255,1);
+$address__link-color:rgba(255,255,255,1);
+$footer-titles-color: rgba(255,255,255,1);
+$social-links__link--footer-background-color: rgba(255, 255, 255, 0.1);
+$social-links__link--footer-color: rgba(255, 255, 255, 1);
+$social-links__link--footer-background-color-hover: rgba(33,150,243,1);
+$footer-subscribe__input-color: rgba(255, 255, 255, 0.6) ;
+$footer-subscribe__input-border-color: rgba(255, 255, 255, 0.3) ;
+$footer-subscribe__input-border-collor-hover: rgba(255, 255, 255, 1);
+$footer-subscribe__button-color: rgba(255, 255, 255, 1) ;
+$footer-subscribe__button-background-color: rgba(33, 150, 243, 1) ;
+$footer-subscribe__button-background-color-hover: rgba(24, 140, 232, 1) ;
+
+  /* Портфоліо */
+$examples__button-background-color:rgba(245,244,250,1);
+$examples__second-laer-color: rgba(255, 255, 255, 1);
+$examples__second-laer-background-color: rgba(33, 150, 243, 0.9);
+$examples__text-box-border: rgba(238, 238, 238, 1);
+
+// Шрифти 
+$main-font-family: 'Roboto', sans-serif;
+$logo-font-family: 'Raleway', sans-serif;
+
+/* Всяке */
+$transition-timing: cubic-bezier(0.4, 0, 0.2, 1);

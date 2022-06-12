@@ -1,0 +1,35 @@
+
+.clients {
+  @extend .title-general;
+  
+  padding: 94px 0px;
+
+  &__list {
+    display: flex;
+  }
+  
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $clients-link-color;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $clients-link-color;
+    transition: border 250ms $transition-timing, color 250ms $transition-timing;
+  }
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid $clients-link-color-hover;
+    color: $clients-link-color-hover;
+  }
+  
+  &__link {
+    fill: currentColor;
+  }
+}

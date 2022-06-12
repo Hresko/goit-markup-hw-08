@@ -1,0 +1,241 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: $backdrop-background-color;
+    transition: opacity 250ms $transition-timing, visibility 250ms $transition-timing;
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 528px;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: $primary-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: opacity 250ms $transition-timing,
+      transform 250ms $transition-timing;
+  }
+
+  .modal__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+
+    color: $modal__close-button-color;
+    background-color: $primary-background-color;
+    border: 1px solid $modal__close-button-border-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 250ms $transition-timing;
+    }
+    
+    .modal__close-button:hover,
+    .modal__close-button:focus {
+      color: $modal-color-hover;
+    }
+  
+    .modal__close-button-icon {
+      fill: currentColor;
+    }
+
+    .modal__title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 12px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      color: $title-text-color;
+    }
+
+    .form {
+      text-align: center;
+    }
+
+    .form__field {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .form__label {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+    }
+
+    .form__input-block {
+      position: relative;
+      display: block;
+    }
+
+    .form__input {
+      display: flex;
+      width: 100%;
+      height: 40px;
+      padding: 12px;
+      padding-left: 42px;
+    }
+    .form__input,
+    .form__comment{
+      color: $title-text-color;
+      border: 1px solid $form-border-color;
+      border-radius: 4px;
+      transition: border-color 250ms $transition-timing;
+      cursor: pointer;
+    }
+    .form__input-block:hover .form__input,
+    .form__input-block:focus .form__input,
+    .form__comment:hover,
+    .form__comment:focus,
+    .form__input:focus-within  {
+      border-color: $modal-color-hover;
+      outline: 0;
+    }
+
+    .form__input-block:focus-within .form__icon {
+      color: $modal-color-hover;
+    }
+
+    .form__icon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      color: $title-text-color;
+      fill: currentColor;
+      transform: translateY(-50%);
+      transition: color 250ms $transition-timing;
+    }
+
+    .comment {
+      margin-bottom: 20px;
+    }
+    
+    .form__comment {
+      display: flex;
+      width: 100%;
+      height: 120px;
+      padding: 12px 16px;
+      resize: none;
+      overflow:auto;
+    }
+
+    .checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .checkbox:hover .checkbox__icon-unchecked,
+    .checkbox:focus .checkbox__icon-unchecked {
+      border-color: $modal-color-hover;
+    }
+    .checkbox__container {
+      position: relative;
+      display: block;
+      width: 16px;
+      height: 15px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .checkbox__input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .checkbox__input:checked + .checkbox__icon-checked {
+      opacity:1;
+    }
+    .checkbox__icon-checked {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $modal-color-hover;
+      color: $checkbox__icon-checked;
+      fill: currentColor;
+      background-clip: border-box;
+      border-radius: 2px;
+      opacity: 0;
+      z-index: 2;
+      transition: opacity 250ms $transition-timing;
+    }
+
+    .checkbox__icon-unchecked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $checkbox__icon-unchecked-border-color;
+      border-radius: 2px;
+      transition: border-color 250ms $transition-timing;
+    }
+
+    .checkbox__label {
+      cursor: pointer;
+    }
+
+    .checkbox__labe-link {
+      color: $modal-color-hover;
+      text-decoration: underline;
+    }
+
+    .form__button-submit {
+      padding: 10px 55px;
+      min-width: 200px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      color: $primary-background-color;
+      background: $modal-color-hover;
+      border: 0;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition: background-color 250ms $transition-timing;
+    }
+
+    .form__button-submit:hover,
+    .form__button-submit:focus {
+      background-color: $form__button-submit-color-hover;
+      ;
+    }

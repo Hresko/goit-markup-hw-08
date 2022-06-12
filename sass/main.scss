@@ -1,0 +1,22 @@
+
+// utils 
+@import './utils/variables';
+@import './utils/global';
+@import './utils/visually-hidden';
+@import './utils/title-general';
+
+// shared components
+@import './components/shared/container';
+@import './components/shared/logo';
+@import './components/social-links/social-links';
+@import './components/header/header';
+@import './components/header/header-navigation';
+@import './components/header/header-contacts';
+@import './components/hero/hero';
+@import './components/modal/modal';
+@import './components/preference/preference';
+@import './components/occupation/occupation';
+@import './components/team/team';
+@import './components/clients/clients';
+@import './components/footer/footer';
+@import './components/portfolio/portfolio';

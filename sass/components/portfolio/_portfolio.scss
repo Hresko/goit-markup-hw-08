@@ -1,0 +1,121 @@
+.examples { 
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    
+ &__button-list {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+  }
+  &__button-item:not(:last-child) {
+      margin-right: 8px;
+  }
+  &__button {
+    padding: 6px 22px;
+    border: transparent;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: $examples__button-background-color;
+    transition: background-color 250ms $transition-timing,color 250ms $transition-timing, box-shadow 250ms $transition-timing;
+  }
+  
+  &__button {
+    color: $title-text-color;
+    background-color: $button-background-color-normal;
+    cursor: pointer;
+    transition: color 250ms $transition-timing, background-color 250ms $transition-timing;
+  }
+  
+  &__button:hover,
+  &s__button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  &__button:hover,
+  &__button:focus {
+    color: $button-color-hover;
+    background-color: $header-color-hover;
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 370px;
+  }
+  
+  &__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &__item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+  
+  &__link {
+    display: block;
+    text-decoration: none;
+    transition: box-shadow 250ms $transition-timing;
+  }
+  
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  &__image-box {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  &__second-laer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    background-color: $examples__second-laer-background-color;
+    opacity: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $examples__second-laer-color;
+    transform: translateY(100%);
+    transition: transform 250ms $transition-timing, opacity 250ms $transition-timing;
+  }
+  
+  &__link:hover .examples__second-laer,
+  &__link:focus .examples__second-laer  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  &__text-box {
+    padding: 20px 24px;
+    border-left: 1px solid $examples__text-box-border;
+    border-right: 1px solid $examples__text-box-border;
+    border-bottom: 1px solid $examples__text-box-border;
+  }
+  &__text-box-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: $title-text-color;
+  }
+  
+  &__text-box-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $primary-tex-color;
+  }
+  }
