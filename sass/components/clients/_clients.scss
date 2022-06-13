@@ -5,7 +5,7 @@
   padding: 94px 0px;
 
   &__list {
-    display: flex;
+    // display: flex;
   }
   
   &__item:not(:last-child) {
@@ -17,7 +17,7 @@
     height: 92px;
     border: 1px solid $clients-link-color;
     border-radius: 4px;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     color: $clients-link-color;

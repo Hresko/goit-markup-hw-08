@@ -1,0 +1,48 @@
+.mobile-button {
+    position: relative;
+    z-index: 11;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $title-text-color;
+    background-color: $primary-background-color;
+    transition: color 2050ms $transition-timing;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $modal-color-hover;
+    }
+    &.is-open {
+        position: fixed;
+        overflow-y: scroll;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+}
+
+.mobile-button__icon {
+    fill: currentColor;
+}
+
+.mobile-button__icon-open {
+    display: block;
+    .mobile-button.is-open & {
+        display: none;
+    }
+}
+
+.mobile-button__icon-close {
+    display: none;
+    .mobile-button.is-open & {
+        display: block;
+    }
+}
