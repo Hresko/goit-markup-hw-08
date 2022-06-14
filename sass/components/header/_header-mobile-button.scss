@@ -11,7 +11,7 @@
     align-items: center;
     color: $title-text-color;
     background-color: $primary-background-color;
-    transition: color 2050ms $transition-timing;
+    transition: color 250ms $transition-timing;
     border: none;
     cursor: pointer;
 
@@ -20,7 +20,6 @@
         color: $modal-color-hover;
     }
     &.is-open {
-        position: fixed;
         overflow-y: scroll;
     }
 

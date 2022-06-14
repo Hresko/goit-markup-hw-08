@@ -1,25 +1,34 @@
 
 .occupation {
   @extend .title-general;
-  padding: 94px 0px;
-  padding-top: 0;
-  
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 94px;
+    padding-top: 0;
+  }
 }
+
   .occupation__list {
-    // display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
-  .occupation__list__item {
+  .occupation__item {
     position: relative;
+    width: 370px;
   } 
   
-  .occupation__list__item:not(:nth-child(3n)) {
+  .occupation__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
   
-  .occupation__list__text { 
+  .occupation__text { 
     position: absolute;
     bottom: 0;
     left: 0;
