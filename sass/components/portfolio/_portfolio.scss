@@ -101,7 +101,8 @@
   
   
   .examples__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     transition: box-shadow 250ms $transition-timing;
 
@@ -143,6 +144,7 @@
   
 
   .examples__text-box {
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid $examples__text-box-border;
     border-right: 1px solid $examples__text-box-border;

@@ -1,6 +1,6 @@
 
 .occupation {
-  @extend .title-general;
+
   display: none;
 
   @media screen and (min-width: 1200px) {
@@ -9,6 +9,10 @@
     padding-top: 0;
   }
 }
+
+ .occupation__title {
+  @extend %title-general;
+ }
 
   .occupation__list {
 
