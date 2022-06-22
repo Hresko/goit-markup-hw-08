@@ -36,7 +36,7 @@ img {
   height: auto;
 }
 
-.preference__title {
+.preference__title, .examples__title {
   position: absolute;
   width: 1px;
   height: 1px;

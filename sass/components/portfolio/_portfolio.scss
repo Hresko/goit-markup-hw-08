@@ -8,6 +8,11 @@
     padding-bottom: 94px;
   }
 }
+
+.examples__title {
+  @extend %visually-hidden
+}
+
 .examples__button-list {
     display: flex;
     flex-wrap: wrap;
